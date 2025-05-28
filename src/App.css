@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   background: linear-gradient(135deg, #232526 0%, #6a82fb 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,13 +87,9 @@ h1 {
   font-size: 4.5rem;
   margin-bottom: 10px;
   text-shadow: 2px 2px 16px rgba(106, 130, 251, 0.18);
-  color: #fff;
+  color: #b6aaaa;
   letter-spacing: 2px;
   font-weight: 900;
-  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 h2 {
@@ -182,13 +178,9 @@ p {
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 16px rgba(106, 130, 251, 0.18);
-    color: #fff;
+    color: #bdbdbd;
     letter-spacing: 2px;
     font-weight: 900;
-    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
   }
   img {
     display: block;
