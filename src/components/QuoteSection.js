@@ -12,7 +12,8 @@ function QuoteSection({ mood }) {
 
     axios.get('https://api.allorigins.win/raw?url=https://zenquotes.io/api/random')
       .then(res => {
-        const data = JSON.parse(res.data);
+        // The API already returns a parsed object, so use res.data directly
+        const data = res.data;
         if (data && data[0]) {
           setQuote(data[0].q + " — " + data[0].a);
         } else {
