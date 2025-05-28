@@ -130,3 +130,66 @@ p {
   height: 24px;
   display: inline-block;
 }
+
+@media (max-width: 700px) {
+  .App {
+    max-width: 98vw;
+    width: 100vw;
+    margin: 10px 0;
+    padding: 10px 2vw 16px 2vw;
+    border-radius: 14px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  img {
+    height: 110px;
+    margin: 6px 0;
+    border-radius: 10px;
+  }
+  .spotify-link {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    border-radius: 18px;
+  }
+  .spotify-logo {
+    width: 18px;
+    height: 18px;
+  }
+  form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  input, select, button {
+    font-size: 15px;
+    padding: 8px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .App {
+    padding: 4px 0 10px 0;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  img {
+    height: 70px;
+  }
+}
