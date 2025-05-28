@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import MoodInput from './components/MoodInput';
+import QuoteSection from './components/QuoteSection';
+import GifSection from './components/GifSection';
+import MusicSection from './components/MusicSection';
 
 function App() {
+  const [mood, setMood] = useState('');
+
+  useEffect(() => {
+    document.title = 'ZenVibe';
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ZenVibe</h1>
+      <MoodInput setMood={setMood} />
+      {mood && (
+        <>
+          <h2>Your mood: {mood}</h2>
+          <QuoteSection mood={mood} />
+          <GifSection mood={mood} />
+          <MusicSection mood={mood} />
+        </>
+      )}
     </div>
   );
 }

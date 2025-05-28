@@ -1,38 +1,132 @@
-.App {
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  max-width: 1200px;
+  width: 95vw;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  padding: 18px 12px 20px 12px;
+  transition: box-shadow 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  padding: 10px 15px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin-bottom: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  background: #f7f7fa;
+  outline: none;
+  transition: border 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select:focus {
+  border: 1.5px solid #a084e8;
+}
+
+button {
+  padding: 10px 22px;
+  margin-left: 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #a084e8 0%, #fcaeae 100%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(160, 132, 232, 0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #fcaeae 0%, #a084e8 100%);
+  box-shadow: 0 4px 16px rgba(160, 132, 232, 0.15);
+}
+
+img {
+  margin: 10px;
+  height: 180px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(160, 132, 232, 0.10);
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(160, 132, 232, 0.10);
+  color: #333;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #a084e8;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #fcaeae;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.spotify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #1db954;
+  color: #fff;
+  border-radius: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(30, 215, 96, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  margin-top: 8px;
+}
+
+.spotify-link:hover {
+  background: #169943;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(30, 215, 96, 0.18);
+  transform: translateY(-2px) scale(1.04);
+  text-decoration: none;
+}
+
+.spotify-logo {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
